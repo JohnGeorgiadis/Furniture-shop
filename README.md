@@ -1,2 +1,4 @@
-# Furniture-shop
-A mock up website for experimenting with HTML5/css3
+# node-example-app
+================
+
+Node.js example app for the Grunt tutorial
