@@ -51,13 +51,6 @@ module.exports = function(grunt) {
       }
     },
 
-    coffee: {
-      compile: {
-       files: {
-         'scripts/hello.js': 'scripts/hello.coffee'
-       }
-     }
-   },
 
    cssmin: {
     build: {
@@ -79,12 +72,11 @@ module.exports = function(grunt) {
   // Default task
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('css', ['sass', 'cssmin']);
-  grunt.registerTask('js', ['coffee', 'concat', 'uglify']);
+  grunt.registerTask('js', ['concat', 'uglify']);
 
   // Load up tasks
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
