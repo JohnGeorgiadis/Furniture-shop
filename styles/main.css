@@ -4,7 +4,8 @@ body {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  font-family: OpenSans; }
 
 .navbar {
   -webkit-border-radius: 0;
@@ -33,5 +34,25 @@ body {
     font-size: 40px;
     color: white;
     background-color: rgba(55, 55, 55, 0.5); }
+
+.info-space {
+  background-color: #b91b35;
+  color: white;
+  font-size: 16px; }
+
+.experience-space {
+  font-size: 16px;
+  background-color: #f8f8f8; }
+
+.statistics-space .numbers {
+  font-size: 3.25em;
+  font-weight: 800;
+  color: #b91b35; }
+.statistics-space .sub-headers {
+  font-weight: 600;
+  font-size: large; }
+
+.closing-statement {
+  background-image: url("http://meblekrak.pl/wp-content/uploads/2016/05/background.jpg"); }
 
 /*# sourceMappingURL=main.css.map */
