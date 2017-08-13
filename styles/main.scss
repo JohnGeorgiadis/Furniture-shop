@@ -25,13 +25,20 @@ body {
     left: 0;
     width: 100%;
     line-height: 40px;
-    font-size: 40px;
     color: rgb(255, 255, 255);
     background-color: rgba(55, 55, 55, 0.5);
+    h1 {
+      font-size: 7em;
+    }
   }
 }
 
-.info-space {
+.text-formated {
+  line-height: 1.8em;
+  padding: 0 50px 0 50px;
+}
+
+#info-space {
   background-color: #b91b35;
   color: white;
   font-size: 16px;
