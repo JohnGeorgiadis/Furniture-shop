@@ -1,16 +1,27 @@
-.navbar {
+#myNavbar {
+  font-size: 24px; }
+
+.navbar-inverse {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   margin-bottom: 0;
-  color: white;
-  z-index: 1; }
+  color: #ffffff;
+  background-color: #1f303e;
+  z-index: 1;
+  position: fixed;
+  width: 100%; }
+  .navbar-inverse a {
+    color: #a7b1c2 !important; }
+    .navbar-inverse a:hover, .navbar-inverse a:active {
+      color: #ffffff !important; }
+  .navbar-inverse .navbar-toggle {
+    background-color: #293846 !important; }
+    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:active {
+      background-color: #293846 !important; }
 
 .logo {
   max-width: 120px; }
-
-#myNavbar {
-  font-size: 24px; }
 
 html, body {
   margin: 0;
@@ -21,6 +32,9 @@ html, body {
   font-family: OpenSans;
   text-rendering: auto; }
 
+h2 {
+  margin-bottom: 20px; }
+
 .row {
   margin: 0; }
 
@@ -28,12 +42,12 @@ html, body {
   padding: 100px 0 100px 0; }
 
 .header-placeholder {
-  background-color: #222; }
+  background-color: #1f303e; }
 
 .thumbnail {
   position: relative;
   border: 0;
-  background-color: #222; }
+  background-color: #1f303e; }
   .thumbnail p {
     font-size: 3rem; }
   .thumbnail .caption-left {
@@ -41,41 +55,64 @@ html, body {
     top: 45%;
     left: 0;
     width: 100%;
-    line-height: 40px;
+    line-height: 45px;
     color: white;
     background-color: rgba(55, 55, 55, 0.5); }
+    .thumbnail .caption-left p {
+      margin-top: 10px; }
+    @media only screen and (max-width: 1200px) {
+      .thumbnail .caption-left {
+        line-height: 20px; } }
+    @media only screen and (max-width: 800px) {
+      .thumbnail .caption-left {
+        top: 50%; } }
+    @media only screen and (max-width: 500px) {
+      .thumbnail .caption-left {
+        top: 55%; }
+        .thumbnail .caption-left p {
+          font-size: 24px; } }
   .thumbnail .caption-right {
     position: absolute;
     top: 55%;
     right: 0;
     width: 100%;
-    line-height: 40px;
+    line-height: 45px;
     color: white;
     background-color: rgba(55, 55, 55, 0.5); }
+    .thumbnail .caption-right p {
+      margin-top: 10px; }
+    @media only screen and (max-width: 1200px) {
+      .thumbnail .caption-right {
+        line-height: 20px; } }
+    @media only screen and (max-width: 800px) {
+      .thumbnail .caption-right {
+        top: 65%; } }
+    @media only screen and (max-width: 500px) {
+      .thumbnail .caption-right {
+        top: 75%; }
+        .thumbnail .caption-right p {
+          font-size: 24px; } }
 
 .text-formated {
   line-height: 1.8rem;
   padding: 0 50px 0 50px; }
 
 #info-space {
-  background-color: #b91b35;
-  color: white;
-  font-size: 16px; }
+  background-color: #1ab394;
+  color: white; }
 
 .experience-space {
-  font-size: 16px;
   background-color: #f8f8f8; }
 
 .closing-statement {
   background-image: url("http://meblekrak.pl/wp-content/uploads/2016/05/background.jpg"); }
 
 .footer {
-  background: #737373;
-  color: white; }
+  background: #1f303e;
+  color: #a7b1c2; }
   .footer a {
-    color: white; }
+    color: #a7b1c2; }
   .footer i, .footer span, .footer a {
-    font-size: 1.7rem;
     padding: 5px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,6 @@
 @import "headerArea";
+@import "colors";
+
 html,body {
   margin: 0;
   padding: 0;
@@ -8,6 +10,9 @@ html,body {
   font-family: OpenSans;
   text-rendering: auto;
 }
+h2 {
+  margin-bottom: 20px;
+}
 .row {
   margin: 0;
 }
@@ -15,12 +20,12 @@ html,body {
   padding: 100px 0 100px 0;
 }
 .header-placeholder {
-  background-color: #222;
+  background-color: $blackDefault;
 }
 .thumbnail {
   position: relative;
   border: 0;
-  background-color: #222;
+  background-color: $blackDefault;
   p {
     font-size: 3rem;
   }
@@ -29,18 +34,49 @@ html,body {
       top: 45%;
       left: 0;
       width: 100%;
-      line-height: 40px;
+      line-height: 45px;
       color: rgb(255, 255, 255);
       background-color: rgba(55, 55, 55, 0.5);
+      p {
+        margin-top: 10px;
+      }
+      @media only screen and (max-width: 1200px) {
+        line-height: 20px;
+      }
+      @media only screen and (max-width: 800px) {
+        top: 50%;
+      }
+      @media only screen and (max-width: 500px) {
+        p {
+          font-size: 24px;
+        }
+        top: 55%;
+      }
+
     }
   .caption-right {
     position: absolute;
     top: 55%;
     right: 0;
     width: 100%;
-    line-height: 40px;
+    line-height: 45px;
     color: rgb(255, 255, 255);
     background-color: rgba(55, 55, 55, 0.5);
+    p {
+      margin-top: 10px;
+    }
+    @media only screen and (max-width: 1200px) {
+      line-height: 20px;
+    }
+    @media only screen and (max-width: 800px) {
+      top: 65%;
+    }
+    @media only screen and (max-width: 500px) {
+      p {
+        font-size: 24px;
+      }
+      top: 75%;
+    }
   }
 }
 
@@ -50,17 +86,12 @@ html,body {
 }
 
 #info-space {
-  background-color: #b91b35;
+  background-color: $green;
   color: white;
-  font-size: 16px;
 }
 
 .experience-space {
-  font-size: 16px;
   background-color: #f8f8f8;
-  .row {
-
-  }
 }
 
 .closing-statement {
@@ -68,13 +99,12 @@ html,body {
 }
 
 .footer {
-  background: #737373;
-  color: rgb(255, 255, 255);
+  background: $blackDefault;
+  color: $navTextColor;
   a {
-    color: rgb(255, 255, 255);
+    color: $navTextColor;
   }
   i,span,a {
-    font-size: 1.7rem;
     padding: 5px;
   }
 }
