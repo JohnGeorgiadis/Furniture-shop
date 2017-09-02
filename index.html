@@ -1,156 +1,227 @@
-<!doctype html>
-<html class="no-js">
-
-<head>
-    <title>Rafał shop</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <!-- remove when not using livereload and uncomment in main.scss bootstrap import-->
-    <link rel="stylesheet" href="styles/main.min.css">
-    <!--Font family -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <script src="bower_components/modernizr/modernizr.js"></script>
-</head>
-
+<!DOCTYPE html>
+<html>
+<title>Rafał shop</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- remove when not using livereload and uncomment in main.scss bootstrap import-->
+<link rel="stylesheet" href="styles/main.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="bower_components/modernizr/modernizr.js"></script>
 <body>
-    <!--[if lt IE 10]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <header>
-        <nav class="navbar navbar-inverse">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img class="img-responsive logo" src="./img/logo.jpg"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right text-center">
-                    <li><a href="#info-space">O nas</a>
-                    </li>
-                    <li><a href="#">Oferta</a>
-                    </li>
-                    <li><a href="#footer">Kontakt</a>
-                    </li>
-                    <li><a href="#">Opinie</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> O NAS</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
+    </div>
 
-    <section class="container-fluid header-placeholder">
-        <div class="row" id="box-search">
-            <div class="thumbnail text-center">
-                <img src="./img/header.jpg" alt="" class="img-responsive">
-                <div class="caption-left animated fadeInLeft">
-                    <p>Meble na wymiar </p>
-                </div>
-                <div class="caption-right animated fadeInRight">
-                    <p>Rafał Koman</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
+    </div>
+</div>
 
-    <section class="container-fluid padding-content" id="info-space">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center">O NAS</h2>
-            </div>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+            <div class="w3-hide-small">Meble na wymiar</div>
+            Rafał Koman
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p class="text-center text-formated">
-                    Jesteśmy prężenie działającą firmą z długoletnim doświadczeniem w branży meblowej. Jako rzetelny producent mebli na zamówienie specjalizujemy się w dostarczaniu wysokiej jakości rozwiązań na wymiar wg indywidualnie przygotowanych projektów, dokładając wszelkich starań, by zapewnić Państwu najlepszą jakość usług.
-                    Dostarczamy usługi z zakresu projektowania, produkcji i montażu mebli z wykorzystaniem zarówno tradycyjnych jak i nowoczesnych rozwiązań.  Wychodząc naprzeciw oczekiwaniom klientów, zapewniamy doradztwo, by jak najlepiej zrealizować  oczekiwania naszych zleceniodawców. Dbając o jakoś świadczonych usług, korzystamy jedynie ze sprawdzonych materiałów najlepszych polskich firm.
-                    Aby zapoznać się bliżej z naszą ofertą, zapraszamy do kontaktu telefonicznego.
-                    Działamy na terenie Żywca i okolic.
-                    Serdecznie zapraszamy do skorzystania z naszych usług!
-                </p>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    <section class="text-center container-fluid experience-space padding-content">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center">
-                <h2 class="text-center subtitle fancy"> <span> DOŚWIADCZENIE </span></h2>
-            </div>
-            <div class="col-md-12 text-center">
-                <p class="text-center text-formated">
-                    Posiadamy doświadczenie w realizacji mebli kuchennych, mebli pokojowych oraz łazienkowych.
-                    Od ponad pięciu lat wykonujemy szafy wnękowe z drzwiami przesuwnymi,
-                    szafy wnękowe z drzwiami tradycyjnie zamykanymi, szafy wolnostojące z drzwiami przesuwnymi,
-                    szafy wolnostojące z drzwiami tradycyjnie zamykanymi, meble biurowe, szafki i stoliki RTV,
-                    garderoby czy meble do pokoju dziecinnego.
-                    Nasze doświadczenie obejmuje ponadto zabudowy wnęk (w tym szaf wnękowych, szaf do zabudowy) kuchni,
-                    zabudów oraz innych mebli według nietypowych wzorów.
-                </p>
-            </div>
-        </div>
-    </section>
+</div>
 
-    <section class="text-center container-fluid closing-statement padding-content">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3 class="text-capitalize text-center">PROFESJONALNIE</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3 class="text-capitalize text-center">SZYBKO</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3 class="text-capitalize text-center">TANIO</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <p class="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?
-                </p>
-            </div>
-        </div>
-    </section>
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">O NAS</h3>
+    <p>
+        Jesteśmy prężenie działającą firmą z długoletnim doświadczeniem w branży meblowej. Jako rzetelny producent mebli na zamówienie specjalizujemy się w dostarczaniu wysokiej jakości rozwiązań na wymiar wg indywidualnie przygotowanych projektów, dokładając wszelkich starań, by zapewnić Państwu najlepszą jakość usług. Dostarczamy usługi z zakresu projektowania, produkcji i montażu mebli z wykorzystaniem zarówno tradycyjnych jak i nowoczesnych rozwiązań. Wychodząc naprzeciw oczekiwaniom klientów, zapewniamy doradztwo, by jak najlepiej zrealizować oczekiwania naszych zleceniodawców. Dbając o jakoś świadczonych usług, korzystamy jedynie ze sprawdzonych materiałów najlepszych polskich firm. Aby zapoznać się bliżej z naszą ofertą, zapraszamy do kontaktu telefonicznego. Działamy na terenie Żywca i okolic. Serdecznie zapraszamy do skorzystania z naszych usług!
+    </p>
 
-    <footer class="footer container-fluid" id="footer">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3> Kontakt</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <i class="glyphicon glyphicon-home"></i>
-                <span> Lipowa 691 34-324 Lipowa woj. śląskie</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <i class="glyphicon glyphicon-phone"></i>
-                <span>Lipowa 691 34-324 Lipowa woj. śląskie</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <i class="glyphicon glyphicon-envelope"></i>
-                <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Send Mail</a>
-            </div>
-        </div>
-    </footer>
+</div>
 
-    <script src="scripts/built.min.js"></script>
-    <script src="http://localhost:35729/livereload.js"></script>
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">14+</span><br>
+        Partners
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+    </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center"> PROJECTS</h3>
+    <p class="w3-center"><em>Here are some of our latest projects<br> Click on the images to make them bigger</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+
+        <div class="w3-col m3">
+            <img src="./img/china-kitchen.jpg"  onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="./img/glass-wardrobe.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="./img/china-kitchen-dark.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="./img/desk-corner.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+        </div>
+
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+
+        <div class="w3-col m3">
+            <img src="./img/wardrobe-full.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="./img/kitchen-color.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="./img/kitchen-color-full.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+        </div>
+
+        <div class="w3-col m3">
+            <img src="./img/kitchen-red-white.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">KONTAKT</span>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">YOU CAN FIND US AT </h3>
+
+    <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+            <!-- Add Google Maps -->
+            <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+        </div>
+        <div class="w3-col m8 w3-panel">
+            <div class="w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Lipowa 691 34-324 Lipowa woj. śląskie<br>
+                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +48 793 595 064<br>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Send Mail</a><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+
+    </div>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+    function myMap()
+    {
+        myCenter=new google.maps.LatLng(49.6757400, 19.0939800);
+        var mapOptions= {
+            center:myCenter,
+            zoom:12, scrollwheel: false, draggable: false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+        marker.setMap(map);
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUtZOZ8Lr69fVJ7QZbat88RzIkR-8IAYw&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
 </body>
-
 </html>
