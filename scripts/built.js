@@ -1,8 +1,3 @@
-//img dir
-var imgs = ["./img/01.jpg", "./img/02.jpg", "./img/03.jpg",
-            "./img/04.jpg", "./img/05.jpg", "./img/06.jpg",
-            "./img/07.jpg", "./img/08.jpg"
-            ];
 function myMap()
 {
     myCenter = new google.maps.LatLng(49.6757400, 19.0939800);
@@ -49,42 +44,5 @@ function toggleFunction() {
         x.className += " w3-show";
     } else {
         x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-//Load more button functionality
-function loadMore () {
-    var numberOfNodes = document.querySelectorAll('.img-gallery').length;
-    var numberOfImgs = imgs.length;
-
-    if (numberOfNodes*4 < numberOfImgs) {
-
-        function insertAfter(el, referenceNode) {
-            referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
-        }
-
-        var newEl = document.createElement('div');
-        newEl.innerHTML = '<div class="w3-row-padding w3-center img-gallery">\n' +
-            '        <div class="w3-col m3">\n' +
-            '            <img src="./img/05.jpg"  onclick="onClick(this)" class="w3-hover-opacity" alt="Wardrobe">\n' +
-            '        </div>\n' +
-            '        <div class="w3-col m3">\n' +
-            '            <img src="img/06.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Kitchen">\n' +
-            '        </div>\n' +
-            '        <div class="w3-col m3">\n' +
-            '            <img src="img/07.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Kitchen">\n' +
-            '        </div>\n' +
-            '        <div class="w3-col m3">\n' +
-            '            <img src="img/08.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Wardrobe">\n' +
-            '        </div>\n' +
-            '    </div>';
-
-        var ref = document.querySelector('.img-gallery');
-        insertAfter(newEl, ref);
-
-        if (numberOfNodes*4 === numberOfImgs-4) {
-            var buttonElement = document.getElementsByClassName('load-button');
-            buttonElement[0].innerHTML = 'DONE';
-        }
     }
 }

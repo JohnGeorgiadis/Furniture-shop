@@ -13,6 +13,7 @@
 <script type="text/javascript" src="./scripts/main.js"></script>
 <script src="bower_components/modernizr/modernizr.js"></script>
 <body>
+
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -41,7 +42,7 @@
     <div class="w3-display-middle" style="white-space:nowrap;">
         <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
             <span class="w3-hide-small">Meble na wymiar</span>
-            Rafał Koman
+            Comodum
         </span>
     </div>
 </div>
@@ -78,8 +79,8 @@
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center"> PROJECTS</h3>
-    <p class="w3-center"><em>Here are some of our latest projects<br> Click on the images to make them bigger</em></p><br>
+    <h3 class="w3-center"> PROJEKTY</h3>
+    <p class="w3-center"><em>Tutaj znajdziesz nasze najnowsze projekty<br> Kliknij na zdjęcie, aby powiekszyć</em></p><br>
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center img-gallery">
@@ -98,8 +99,8 @@
     </div>
 
     <div class="w3-row-padding w3-center">
-        <button class="w3-button w3-padding-large w3-light-grey load-button"  onclick="loadMore()">
-            MORE
+        <button class="w3-button w3-padding-large w3-light-grey load-button"  onclick="window.open('./photos.html')">
+            Rozwiń
         </button>
     </div>
 
@@ -123,7 +124,7 @@
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-    <h3 class="w3-center">YOU CAN FIND US AT </h3>
+    <h3 class="w3-center">MOŻESZ ZNALEŹC NAS W: </h3>
 
     <div class="w3-row w3-padding-32 w3-section">
         <div class="w3-col m4 w3-container">
@@ -133,9 +134,9 @@
         <div class="w3-col m8 w3-panel">
             <div class="w3-large w3-margin-bottom">
                 <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Lipowa 691 34-324 Lipowa woj. śląskie<br>
-                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +48 793 595 064<br>
+                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefon: +48 793 595 064<br>
                 <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-                <a href="mailto:koman.meble@gmail.com?Subject=" target="_top">Send Mail</a><br>
+                <a href="mailto:koman.meble@gmail.com?Subject=" target="_top">Wyślij e-maila</a><br>
             </div>
         </div>
     </div>
@@ -143,8 +144,16 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Powrót do góry strony</a>
 </footer>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUtZOZ8Lr69fVJ7QZbat88RzIkR-8IAYw&callback=myMap"></script>
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55950991-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-55950991-2');
+</script>
 </body>
 </html>
